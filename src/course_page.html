@@ -28,17 +28,17 @@
   <body class="text-[#334155]">
     <header>
       <nav
-        class="border-b border-b-black flex items-center justify-between px-[10rem] py-[20px]"
+        class="border-b border-b-black flex items-center justify-between px-[10rem] py-[20px] md:px-[35px] lg:px-[35px] xl:px-[2rem]"
       >
         <section class="flex items-center">
           <div class="flex items-center">
             <img src="image/logo.png" alt="Byway_logo" />
             <span class="text-[#334155] font-medium">Byway</span>
           </div>
-          <ul>
+          <ul class="md:hidden lg:hidden">
             <li><a href="#" class="text-[#334155] mx-[25px]">Categories</a></li>
           </ul>
-          <div class="relative flex items-center">
+          <div class="relative flex items-center md:hidden lg:hidden">
             <i
               class="bx bx-search-alt-2 absolute top-[28%] left-[25px] text-[20px] text-[#334155]"
             ></i>
@@ -49,13 +49,13 @@
               class="outline-none pl-[40px] border border-solid border-[#334155] w-[622px] h-[40px] rounded-[10px]"
             />
           </div>
-          <ul>
+          <ul class="md:hidden lg:hiddens">
             <li>
               <a href="#" class="text-[#334155] ml-[25px]">Teach on Byway</a>
             </li>
           </ul>
         </section>
-        <section class="flex items-center">
+        <section class="flex items-center md:hidden lg:hidden">
           <i class="bx bx-heart text-[24px]"></i>
           <i class="bx bx-cart-alt text-[24px] mx-[25px]"></i>
           <i class="bx bx-bell text-[24px] mr-[15px]"></i>
@@ -65,15 +65,17 @@
             J
           </button>
         </section>
-        <span class="text-[40px] hidden">
+        <span class="text-[40px] hidden md:block lg:block">
           <i class="bx bx-menu"></i>
         </span>
       </nav>
     </header>
     <main>
       <!-- user experience section  -->
-      <section class="mx-[10rem] flex justify-between">
-        <div class="mt-[40px] w-[840px]">
+      <section
+        class="mx-[10rem] md:mx-[35px] lg:mx-[35px] xl:mx-[2rem] flex justify-between md:flex-col lg:flex-col"
+      >
+        <div class="mt-[40px] w-[840px] md:w-[100%] lg:w-[100%]">
           <div class="flex items-center gap-x-[15px] mb-[40px]">
             <small class="text-[14px] text-[#334155]">Home</small>
             <i class="bx bx-chevron-right text-[24px] text-[#0F172A]"></i>
@@ -86,7 +88,7 @@
           <h1 class="text-[40px] text-[#0F172A] font-bold">
             Introduction to User Experience Design
           </h1>
-          <p class="w-[729px] leading-[160%] mb-[15px]">
+          <p class="w-[729px] leading-[160%] mb-[15px] md:w-[100%] lg:w-[100%]">
             This course is meticulously crafted to provide you with a
             foundational understanding of the principles, methodologies, and
             tools that drive exceptional user experiences in the digital
@@ -110,22 +112,22 @@
             <span> English, Spanish, Italian, German</span>
           </div>
           <div
-            class="flex gap-x-[20px] mt-[60px] border-b border-solid border-[#E2E8F0] pb-[20px] w-[75%] mb-[25px]"
+            class="flex gap-x-[20px] mt-[60px] border-b border-solid border-[#E2E8F0] pb-[20px] w-[75%] mb-[25px] md:flex md:flex-col md:gap-y-[15px] lg:flex lg:flex-col lg:gap-y-[15px] md:w-[100%] lg:w-[100%]"
           >
             <button
-              class="bg-[#EFF6FF] border border-solid w-[148px] py-[15px] rounded-[5px]"
+              class="bg-[#EFF6FF] border border-solid px-[30px] py-[15px] rounded-[5px]"
             >
               Description</button
             ><button
-              class="bg-transparent border border-solid w-[148px] py-[15px] rounded-[5px]"
+              class="bg-transparent border border-solid px-[30px] py-[15px] rounded-[5px]"
             >
               Instructor</button
             ><button
-              class="bg-transparent border border-solid w-[148px] py-[15px] rounded-[5px]"
+              class="bg-transparent border border-solid px-[30px] py-[15px] rounded-[5px]"
             >
               Syllabus</button
             ><button
-              class="bg-transparent border border-solid w-[148px] py-[15px] rounded-[5px]"
+              class="bg-transparent border border-solid px-[30px] py-[15px] rounded-[5px]"
             >
               Review
             </button>
@@ -134,7 +136,9 @@
             <h3 class="text-[20px] text-[#0F172A] font-semibold">
               Course Description
             </h3>
-            <p class="leading-[160%] w-[840px] mb-[25px] mt-[5px]">
+            <p
+              class="leading-[160%] w-[840px] mb-[25px] mt-[5px] md:w-[100%] lg:w-[100%]"
+            >
               This interactive e-learning course will introduce you to User
               Experience (UX) design, the art of creating products and services
               that are intuitive, enjoyable, and user-friendly. Gain a solid
@@ -144,7 +148,9 @@
             <h3 class="text-[20px] text-[#0F172A] font-semibold">
               Certification
             </h3>
-            <p class="leading-[160%] w-[840px] mb-[25px] mt-[5px]">
+            <p
+              class="leading-[160%] w-[840px] mb-[25px] mt-[5px] md:w-[100%] lg:w-[100%]"
+            >
               At Byway, we understand the significance of formal recognition for
               your hard work and dedication to continuous learning. Upon
               successful completion of our courses, you will earn a prestigious
@@ -206,7 +212,7 @@
       </section>
       <!-- instucor section  -->
       <section
-        class="mx-[10rem] mt-[30px] border-b border-solid border-[#E2E8F0] w-[840px] pb-[20px]"
+        class="mx-[10rem] mt-[30px] border-b border-solid border-[#E2E8F0] w-[840px] pb-[20px] md:mx-[35px] xl:mx-[2rem] md:w-[80%] lg:mx-[35px] lg:w-[80%]"
       >
         <h3 class="text-[#0F172A] text-[20px] font-semibold mb-[15px]">
           Instructor
@@ -232,7 +238,7 @@
             </div>
           </div>
         </div>
-        <p class="w-[840px] leading-[160%]">
+        <p class="w-[840px] leading-[160%] md:w-[100%] lg:w-[100%]">
           With over a decade of industry experience, Ronald brings a wealth of
           practical knowledge to the classroom. He has played a pivotal role in
           designing user-centric interfaces for renowned tech companies,
@@ -240,13 +246,15 @@
         </p>
       </section>
       <!-- syllabus section  -->
-      <section class="mx-[10rem] w-[806px] mt-[25px]">
+      <section
+        class="mx-[10rem] w-[806px] mt-[25px] md:mx-[35px] xl:mx-[2rem] md:w-[80%] lg:mx-[35px] lg:w-[80%]"
+      >
         <h3 class="text-[20px] text-[#0F172A] font-semibold">Syllabus</h3>
         <div
-          class="border border-solid border-[#E2E8F0] rounded-[10px] mt-[25px]"
+          class="border border-solid border-[#E2E8F0] rounded-[10px] mt-[25px] md:w-[100%]"
         >
           <div
-            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px]"
+            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px] md:px-[10px] md:flex-col"
           >
             <div class="flex items-center">
               <i
@@ -262,7 +270,7 @@
             </div>
           </div>
           <div
-            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px]"
+            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px] md:px-[10px] md:flex-col"
           >
             <div class="flex items-center">
               <i
@@ -278,7 +286,7 @@
             </div>
           </div>
           <div
-            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px]"
+            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px] md:px-[10px] md:flex-col"
           >
             <div class="flex items-center">
               <i
@@ -294,7 +302,7 @@
             </div>
           </div>
           <div
-            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px]"
+            class="flex items-center justify-between border-b border-solid border-[#E2E8F0] px-[40px] py-[20px] md:px-[10px] md:flex-col"
           >
             <div class="flex items-center">
               <i
@@ -312,9 +320,9 @@
         </div>
       </section>
       <!-- learner review section  -->
-      <section class="mx-[10rem]">
+      <section class="mx-[10rem] md:mx-[35px] lg:mx-[35px] xl:mx-[2rem]">
         <h3 class="text-[20px] text-[#0F172A] font-semibold">Learner Review</h3>
-        <div class="flex items-start justify-between">
+        <div class="flex items-start justify-between md:flex-col lg:flex-col">
           <aside>
             <div class="mt-[15px]">
               <i class="bx bxs-star text-[#EAB308] text-[20px]"></i>
@@ -368,9 +376,11 @@
               </div>
             </div>
           </aside>
-          <div class="w-[949px] flex flex-col gap-y-[20px]">
+          <div
+            class="w-[949px] flex flex-col gap-y-[20px] md:w-[100%] lg:w-[100%]"
+          >
             <div
-              class="border border-solid px-[20px] py-[20px] flex items-start justify-between rounded-[20px] shadow-lg shadow-slate-300"
+              class="border border-solid px-[20px] py-[20px] flex items-start justify-between rounded-[20px] shadow-lg shadow-slate-300 md:flex-col lg:flex-col"
             >
               <div class="flex items-center gap-x-[15px]">
                 <img src="image/Ellipse 19.png" alt="" />
@@ -384,7 +394,7 @@
                     >5</span
                   ><span class="text-[14px]">Reviewed on 22nd March, 2024</span>
                 </div>
-                <p class="leading-[160%] w-[631px]">
+                <p class="leading-[160%] w-[631px] md:w-[100%]">
                   I was initially apprehensive, having no prior design
                   experience. But the instructor, John Doe, did an amazing job
                   of breaking down complex concepts into easily digestible
@@ -394,7 +404,7 @@
               </div>
             </div>
             <div
-              class="border border-solid px-[20px] py-[20px] flex items-start justify-between rounded-[20px] shadow-lg shadow-slate-300"
+              class="border border-solid px-[20px] py-[20px] flex items-start justify-between rounded-[20px] shadow-lg shadow-slate-300 md:flex-col lg:flex-col"
             >
               <div class="flex items-center gap-x-[15px]">
                 <img src="image/Ellipse 19.png" alt="" />
@@ -408,7 +418,7 @@
                     >5</span
                   ><span class="text-[14px]">Reviewed on 22nd March, 2024</span>
                 </div>
-                <p class="leading-[160%] w-[631px]">
+                <p class="leading-[160%] w-[631px] md:w-[100%] lg:w-[100%]">
                   I was initially apprehensive, having no prior design
                   experience. But the instructor, John Doe, did an amazing job
                   of breaking down complex concepts into easily digestible
@@ -418,7 +428,7 @@
               </div>
             </div>
             <div
-              class="border border-solid px-[20px] py-[20px] flex items-start justify-between rounded-[20px] shadow-lg shadow-slate-300"
+              class="border border-solid px-[20px] py-[20px] flex items-start justify-between rounded-[20px] shadow-lg shadow-slate-300 md:flex-col lg:flex-col"
             >
               <div class="flex items-center gap-x-[15px]">
                 <img src="image/Ellipse 19.png" alt="" />
@@ -432,7 +442,7 @@
                     >5</span
                   ><span class="text-[14px]">Reviewed on 22nd March, 2024</span>
                 </div>
-                <p class="leading-[160%] w-[631px]">
+                <p class="leading-[160%] w-[631px] md:w-[100%] lg:w-[100%]">
                   I was initially apprehensive, having no prior design
                   experience. But the instructor, John Doe, did an amazing job
                   of breaking down complex concepts into easily digestible
@@ -452,9 +462,13 @@
         </div>
       </section>
       <!-- customer thoughts -->
-      <section class="px-[10rem] mt-[20px] pt-[90px] pb-[50px] bg-[#F8FAFC]">
-        <div class="flex items-center justify-between">
-          <h2 class="text-[24px] text-[#000000] font-semibold w-[308px]">
+      <section
+        class="px-[10rem] mt-[20px] pt-[90px] pb-[50px] bg-[#F8FAFC] md:px-[35px] lg:px-[35px] xl:px-[2rem] xl:w-[100%]"
+      >
+        <div class="flex items-center justify-between md:flex-col">
+          <h2
+            class="text-[24px] text-[#000000] font-semibold w-[308px] md:w-[100%]"
+          >
             What Our Customers Say About Us
           </h2>
           <div class="flex items-center gap-x-[20px]">
@@ -470,12 +484,16 @@
             </button>
           </div>
         </div>
-        <div class="flex items-center justify-between mt-[20px]">
+        <div
+          class="flex items-center justify-between gap-y-[15px] mt-[20px] md:flex-col md:items-start lg:flex-col lg:items-start"
+        >
           <div
             class="border border-solid px-[30px] py-[30px] bg-white rounded-[20px] shadow-lg shadow-slate-300"
           >
             <i class="bx bxs-quote-left-alt text-[48px] text-[#3B82F6]"></i>
-            <p class="w-[384px] text-[#000000]">
+            <p
+              class="w-[384px] text-[#000000] md:w-[100%] lg:w-[100%] xl:w-[100%]"
+            >
               "Byway's tech courses are top-notch! As someone who's always
               looking to stay ahead in the rapidly evolving tech world, I
               appreciate the up-to-date content and engaging multimedia.
@@ -492,7 +510,9 @@
             class="border border-solid px-[30px] py-[30px] bg-white rounded-[20px] shadow-lg shadow-slate-300"
           >
             <i class="bx bxs-quote-left-alt text-[48px] text-[#3B82F6]"></i>
-            <p class="w-[384px] text-[#000000]">
+            <p
+              class="w-[384px] text-[#000000] md:w-[100%] lg:w-[100%] xl:w-[100%]"
+            >
               "Byway's tech courses are top-notch! As someone who's always
               looking to stay ahead in the rapidly evolving tech world, I
               appreciate the up-to-date content and engaging multimedia.
@@ -509,7 +529,9 @@
             class="border border-solid px-[30px] py-[30px] bg-white rounded-[20px] shadow-lg shadow-slate-300"
           >
             <i class="bx bxs-quote-left-alt text-[48px] text-[#3B82F6]"></i>
-            <p class="w-[384px] text-[#000000]">
+            <p
+              class="w-[384px] text-[#000000] md:w-[100%] lg:w-[100%] xl:w-[100%]"
+            >
               "Byway's tech courses are top-notch! As someone who's always
               looking to stay ahead in the rapidly evolving tech world, I
               appreciate the up-to-date content and engaging multimedia.
@@ -525,13 +547,17 @@
         </div>
       </section>
       <!-- course section -->
-      <section class="mx-[10rem] mt-[4rem]">
+      <section
+        class="mx-[10rem] mt-[4rem] md:mx-[35px] lg:mx-[35px] xl:mx-[2rem]"
+      >
         <h3 class="text-[24px] text-[#0F172A] font-semibold mb-[20px]">
-          More Courses Like Thiss
+          More Courses Like This
         </h3>
-        <div class="flex items-center justify-between gap-y-[30px]">
+        <div
+          class="flex items-center justify-between gap-y-[30px] md:flex-col lg:grid lg:grid-cols-2"
+        >
           <div
-            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px]"
+            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px] lg:w-max"
           >
             <img src="image/Rectangle 1080.png" alt="" />
             <h4
@@ -562,7 +588,7 @@
             </h3>
           </div>
           <div
-            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px]"
+            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px] lg:w-max"
           >
             <img src="image/Rectangle 1080.png" alt="" />
             <h4
@@ -593,7 +619,7 @@
             </h3>
           </div>
           <div
-            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px]"
+            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px] lg:w-max"
           >
             <img src="image/Rectangle 1080.png" alt="" />
             <h4
@@ -624,7 +650,7 @@
             </h3>
           </div>
           <div
-            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px]"
+            class="border border-solid border-[#E2E8F0] shadow-lg shadow-slate-300 rounded-[10px] px-[15px] py-[15px] lg:w-max"
           >
             <img src="image/Rectangle 1080.png" alt="" />
             <h4
@@ -659,9 +685,9 @@
     </main>
     <!-- footer -->
     <footer
-      class="bg-[#1E293B] px-[10rem] text-white flex items-start justify-between gap-y-[30px] pt-[4rem] pb-[8rem] mt-[6rem]"
+      class="bg-[#1E293B] px-[10rem] text-white flex items-start justify-between gap-y-[30px] pt-[4rem] pb-[8rem] mt-[6rem] md:px-[35px] xl:px-[2rem] md:flex-col lg:px-[35px] lg:flex-col"
     >
-      <section class="w-[416px]">
+      <section class="w-[416px] md:w-[100%] lg:w-[100%]">
         <div class="flex items-center mb-[20px]">
           <img src="image/logo.png" alt="Company Logo" />
           <span class="text-[24px] font-medium">Byway</span>
